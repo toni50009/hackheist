@@ -1,0 +1,242 @@
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* O código acima serve para zerar o estilo dos inputs*/
+
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+
+
+.campo-imagem{
+    position: relative;
+    background-image: url('../img/fundo.png');
+    background-repeat: no-repeat;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border: #00BCD4 2px solid;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+
+
+.main{
+    flex:1;
+}
+
+header{
+    background: linear-gradient(90deg, #0d47A1, #2196F3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.container-fluid {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
+    
+}
+
+.w-100 {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.bi-dice-2-fill {
+    color: #64FFDA;
+    font-size: 2rem;
+}
+
+.campo-box {
+    background-color: #1e1e1e;
+    border: 2px solid #2196F3;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campo-box.small {
+    width: 140px;
+    font-size: 0.9rem;
+  }
+  
+.campo-box.small i {
+    font-size: 3rem;
+  }
+
+
+.campo-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.campo-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(33, 150, 243, 0.5);
+}
+
+.campo-box-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #00BCD4;
+    margin-bottom: 0.5rem;
+}
+
+.number-input {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.number-input input {
+    height: 40px;
+    min-height: auto;
+    min-width: 40px;
+    max-width: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: #2c2c2c;
+    border: 2px solid #00BCD4;
+    color: white;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.btn-increment, .btn-decrement {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.btn-increment:hover, .btn-decrement:hover {
+    background-color: #64FFDA;
+    color: #121212;
+}
+
+
+.btn-warning {
+    background: linear-gradient(145deg, #0d7477, #053c52);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-warning:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #8dd605;
+    color: #121212;
+}
+
+@media(max-width: 1010px) {
+    .tabela {
+        width: 100% !important;
+    }
+    .info-jogo{
+        text-align: center;
+    }
+}
+
+.same-height {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    align-self: stretch;
+}
+
+
+.invisivel{
+    display: none;
+}
+
+.bordas-correto{
+    border: 2px solid #11dd0a;
+}
+
+
+.bordas-incorreto{
+    border: 2px solid red !important;
+}
+
+
+@media (max-width: 768px) {
+    .campo-box {
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .campochute .btn {
+        width: 100%;
+        font-size: 1rem;
+      }
+
+    .campo-box {
+        width: 100%;
+    }
+
+    .same-height {
+        width: 100%;
+    }
+
+    .fs-4 {
+        font-size: 1rem;
+    }
+}
+
+
+
+footer {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
