@@ -3,7 +3,7 @@ let numeros = [];
 
 
 // Global Variables
-let tentativas = 5;
+let tentativas = 7;
 let fase = 1;
 
 
@@ -53,7 +53,7 @@ function mostrarTutorial(){
                             <h1><span class="text-primary d-flex justify-content-center align-items-center">Tutorial</span></h1>
                               <p class="text-center fs-4">Seu Hacking tools facilita para você , deixando somente o desafio de adivinhar os números dentro de 
                               cada cadeado. Você tem 3 fases para completar. Cada fase completada aumenta o número de cadeados necessários, até 4 cadeados .
-                               O objetivo é descobrir o número correto em cada cadeado, com 5 tentativas para cada nível.</p>
+                               O objetivo é descobrir o número correto em cada cadeado, com 7 tentativas para cada nível.</p>
                                <p class="text-center fs-4">Você deve clicar nos indicadores para aumentar ou diminuir o número de cada cadeado. Cada cadeado possui um intervalo de números possíveis 
                                que pode ser informado. O jogo lhe indicará os respectivos intervalos de números.</p>
                                <p class="text-center fs-4">Deixe cada cadeado com o número que julga ser o correto e acione o Hacking Tool para descobrir se acertou.</p>
@@ -220,7 +220,7 @@ function defNumeros(){
  //Recomeçar o jogo
  function recarregaPagina(){
   numeros = [];
-  tentativas = 5;
+  tentativas = 7;
   window.location.href = window.location.href;
  }
 
@@ -229,7 +229,7 @@ function defNumeros(){
  //Passar para próxima fase
  function proximaFase(){
   window.scrollTo({ top: 0, behavior: 'smooth' });
-  tentativas = 5;
+  tentativas = 7;
   const campoDicas = document.querySelector('.campodicas');
   campoDicas.classList.remove('invisivel');
   campoDicas.innerHTML = `
